@@ -511,7 +511,7 @@ span{
         max-width: 350px;
     }
 
-    .about .nav-btn{
+    .about-content .nav-btn{
         display: block;
         margin: 2rem auto 0 auto; /* 👈 centrado */
         padding: 1.2rem 3.2rem;
