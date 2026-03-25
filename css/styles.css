@@ -424,9 +424,26 @@ span{
         font-size: 2.5rem;
     }
 
-    .home-img img{
-        width: 90%;
-    }
+.home-img{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.home-img img{
+    width: 220px;
+    max-width: 80%;
+    margin-top: 2rem;
+}
+
+    .home::before{
+    left: 50%;
+    top: 20%;
+    transform: translateX(-50%);
+    font-size: 10rem;
+    opacity: 0.08;
+    text-align: center;
+}
 
     .about{
         flex-direction: column;
