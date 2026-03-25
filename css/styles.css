@@ -382,6 +382,8 @@ span{
         display: none;
     }
 
+    
+
     section{
         padding: 10rem 5%;
     }
@@ -419,6 +421,8 @@ span{
         padding: 2rem 4%;
     }
 
+
+    
     #menu-icon{
         margin-left: auto;
         padding-right: 1rem;
@@ -431,6 +435,13 @@ span{
         justify-content: center;
         text-align: center;
         margin-top: 4rem;
+    }
+
+    .home .nav-btn{
+        display: inline-block; /* por si acaso */
+        padding: 1.2rem 3.2rem;
+        font-size: 1.6rem;
+        margin-top: 1.5rem; /* 👈 lo baja */
     }
 
     section{
@@ -498,6 +509,13 @@ span{
     .about-img img{
         width: 90%;
         max-width: 350px;
+    }
+
+    .about .btn{
+        display: block;
+        margin: 2rem auto 0 auto; /* 👈 centrado */
+        padding: 1.2rem 3.2rem;
+        font-size: 1.6rem;
     }
 
     .services-content{
