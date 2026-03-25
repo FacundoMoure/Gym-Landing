@@ -510,7 +510,7 @@ span{
     }
 
     .services h2{
-        font-size: 2rem;
+        font-size: 4rem;
     }
 
     /* 📖 ABOUT (orden correcto + botón abajo) */
@@ -559,7 +559,7 @@ span{
         order: 4;
         margin-top: auto; /* 👈 lo empuja al fondo */
         margin-bottom: 2rem;
-        padding: 1.8rem 4rem;
+        padding: 1.6rem 3.8rem;
         font-size: 2.2rem;
         display: block;
     }
