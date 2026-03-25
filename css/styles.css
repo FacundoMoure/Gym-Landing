@@ -407,9 +407,20 @@ span{
 
 @media (max-width: 768px){
 
+        /* 🍔 menú hamburguesa a la derecha */
+    #menu-icon{
+        margin-left: auto;
+        padding-right: 1rem;
+    }
+
+    header{
+        padding: 2rem 4%; /* más pegado a los bordes pero prolijo */
+    }
+
+    /* 📐 subir todo el contenido */
     .home{
-        flex-direction: column;
-        text-align: center;
+        margin-top: 4rem; /* antes 8rem */
+        justify-content: center;
     }
 
     .home-content{
@@ -424,11 +435,12 @@ span{
         font-size: 2.5rem;
     }
 
-.home-img{
-    width: 100%;
-    display: flex;
-    justify-content: center;
-}
+    /* 🧍 imagen más grande */
+    .home-img img{
+        width: 300px;
+        max-width: 85%;
+        margin-top: 1rem;
+    }
 
 .home-img img{
     width: 220px;
