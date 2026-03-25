@@ -551,7 +551,7 @@ span{
     }
 
     /* 🔥 BOTÓN ABAJO DEL TODO */
-    .about .btn{
+    .about .nav-btn{
         order: 4;
         margin-top: auto; /* 👈 lo empuja al fondo */
         margin-bottom: 2rem;
