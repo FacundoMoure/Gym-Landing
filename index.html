@@ -144,6 +144,10 @@
           duration: 1400,
           once: true,
         });
+      } else {
+        document.querySelectorAll("[data-aos]").forEach((el) => {
+          el.removeAttribute("data-aos");
+        });
       }
     </script>
     <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>

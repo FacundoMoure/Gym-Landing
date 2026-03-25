@@ -543,10 +543,18 @@ html, body {
 }
 
 
-/* DESACTIVAR AOS EN MOBILE */
+/* ========================= */
+/* FIX AOS MOBILE */
+/* ========================= */
+
 @media (max-width: 768px){
-    [data-aos]{
+    
+    [data-aos],
+    .aos-init,
+    .aos-animate {
         opacity: 1 !important;
         transform: none !important;
+        transition: none !important;
     }
+
 }
