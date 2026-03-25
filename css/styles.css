@@ -423,48 +423,35 @@ span{
 /* ========================= */
 /* MOBILE FINAL PRO */
 /* ========================= */
-
 @media (max-width: 768px){
 
-    /* 🍔 header y menú */
+    /* 🍔 header */
     header{
         padding: 2rem 4%;
     }
 
-
-    
     #menu-icon{
         margin-left: auto;
         padding-right: 1rem;
     }
 
-    /* 📱 layout HOME */
+    /* 📱 HOME */
     .home{
         flex-direction: column;
         align-items: center;
         justify-content: center;
         text-align: center;
         margin-top: 4rem;
+        position: relative;
     }
 
-    .home .nav-btn{
-        display: inline-block; /* por si acaso */
-        padding: 1.2rem 3.2rem;
-        font-size: 1.6rem;
-        margin-top: 1.5rem; /* 👈 lo baja */
-    }
-
-    section{
-        padding: 8rem 5% 2rem;
-    }
-
-    /* 🖼️ imagen arriba */
     .home-img{
         order: 1;
         width: 100%;
         display: flex;
         justify-content: center;
-        position: relative;
+        align-items: center;
+        z-index: 2;
     }
 
     .home-img img{
@@ -473,15 +460,14 @@ span{
         margin-top: 0.5rem;
     }
 
-    /* 📝 texto abajo */
     .home-content{
         order: 2;
         width: 100%;
         max-width: 500px;
         margin-top: 2rem;
+        z-index: 2;
     }
 
-    /* 🔤 tamaños bien balanceados */
     .home-content h1{
         font-size: 3.5rem;
         margin-top: 1.5rem;
@@ -496,45 +482,61 @@ span{
         font-size: 2rem;
     }
 
-    /* 🔥 KRATOS fondo centrado */
+    .home .nav-btn{
+        padding: 1.5rem 3.5rem;
+        font-size: 1.8rem;
+        margin-top: 2rem;
+    }
+
+    /* 🔥 KRATOS centrado */
     .home::before{
         left: 50%;
-        top: 18%;
+        top: 20%;
         transform: translateX(-50%);
         font-size: 10rem;
         opacity: 0.08;
         text-align: center;
+        white-space: nowrap;
     }
 
-    .services .h2{
-        font-size: 4rem;
+    /* 📦 SECCIONES */
+    section{
+        padding: 7rem 5% 2rem;
     }
 
-    /* 🧱 otras secciones */
+    /* 🧱 SERVICES */
+    .services-content{
+        grid-template-columns: 1fr;
+    }
+
+    /* 📖 ABOUT (orden correcto + botón abajo) */
     .about{
         flex-direction: column;
         align-items: center;
         text-align: center;
+        min-height: 100vh;
     }
 
     .about-content{
-        
-        padding: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        height: 100%;
     }
 
     .about-content h2{
         order: 1;
-        text-align: center;
+        font-size: 3.2rem;
         margin-bottom: 1rem;
-        font-size: 4rem;
     }
-
 
     .about-img{
         order: 2;
         width: 100%;
         display: flex;
         justify-content: center;
+        margin-bottom: 1rem;
     }
 
     .about-img img{
@@ -542,27 +544,33 @@ span{
         max-width: 290px;
     }
 
-
     .about-content p{
+        order: 3;
         font-size: 1.8rem;
         line-height: 1.6;
-        order: 3;
     }
 
-
+    /* 🔥 BOTÓN ABAJO DEL TODO */
     .about .btn{
-        display: block;
-        margin: 2rem auto 0 auto; /* 👈 centrado */
-        padding: 1.6rem 3.6rem;
-        font-size: 2rem;
         order: 4;
+        margin-top: auto; /* 👈 lo empuja al fondo */
+        margin-bottom: 2rem;
+        padding: 1.8rem 4rem;
+        font-size: 2.2rem;
+        display: block;
     }
 
-
-
-    .services-content{
-        grid-template-columns: 1fr;
+    /* 📱 NAVBAR */
+    .navbar{
+        align-items: center;
+        text-align: center;
     }
+
+    /* 📌 FOOTER FIX */
+    .footer h2{
+        margin-bottom: 4rem; /* 👈 más separación */
+    }
+
 }
 
 @media (max-width: 480px){
