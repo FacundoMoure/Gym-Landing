@@ -371,12 +371,15 @@ span{
         right: 0;
     }
 
-    .nav-btn{
-        display: none;
-    }
+
 
     header{
         padding: 2rem 5%;
+    }
+
+
+    header .nav-btn{
+        display: none;
     }
 
     section{
