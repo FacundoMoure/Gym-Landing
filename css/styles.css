@@ -296,6 +296,12 @@ span{
     padding: 40px 0;
 }
 
+.footer h2{
+    text-align: center;
+    font-size: 4rem;
+    margin-bottom: 3rem;
+}
+
 .footer .social {
     text-align: center;
     padding-bottom: 20px;
