@@ -405,58 +405,84 @@ span{
     }
 }
 
+/* ========================= */
+/* MOBILE FINAL PRO */
+/* ========================= */
+
 @media (max-width: 768px){
 
-        /* 🍔 menú hamburguesa a la derecha */
+    /* 🍔 header y menú */
+    header{
+        padding: 2rem 4%;
+    }
+
     #menu-icon{
         margin-left: auto;
         padding-right: 1rem;
     }
 
-    header{
-        padding: 2rem 4%; /* más pegado a los bordes pero prolijo */
-    }
-
-    /* 📐 subir todo el contenido */
+    /* 📱 layout HOME */
     .home{
-        margin-top: 4rem; /* antes 8rem */
+        flex-direction: column;
+        align-items: center;
         justify-content: center;
+        text-align: center;
+        margin-top: 4rem;
     }
 
-    .home-content{
-        order: 2;
+    section{
+        padding: 8rem 5% 2rem;
     }
 
-    .home-content h1{
-        font-size: 3.5rem;
+    /* 🖼️ imagen arriba */
+    .home-img{
+        order: 1;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        position: relative;
     }
 
-    .home-content h3{
-        font-size: 2.5rem;
-    }
-
-    /* 🧍 imagen más grande */
     .home-img img{
-        width: 300px;
-        max-width: 85%;
+        width: 320px;
+        max-width: 90%;
         margin-top: 1rem;
     }
 
-.home-img img{
-    width: 220px;
-    max-width: 80%;
-    margin-top: 2rem;
-}
+    /* 📝 texto abajo */
+    .home-content{
+        order: 2;
+        width: 100%;
+        max-width: 500px;
+        margin-top: 2rem;
+    }
 
+    /* 🔤 tamaños bien balanceados */
+    .home-content h1{
+        font-size: 3.2rem;
+        margin-top: 1.5rem;
+    }
+
+    .home-content h3{
+        font-size: 2.4rem;
+        margin-top: 1rem;
+    }
+
+    .home-content p{
+        font-size: 1.6rem;
+    }
+
+    /* 🔥 KRATOS fondo centrado */
     .home::before{
-    left: 50%;
-    top: 20%;
-    transform: translateX(-50%);
-    font-size: 10rem;
-    opacity: 0.08;
-    text-align: center;
-}
+        left: 50%;
+        top: 18%;
+        transform: translateX(-50%);
+        font-size: 10rem;
+        opacity: 0.08;
+        text-align: center;
+    }
 
+    /* 🧱 otras secciones */
     .about{
         flex-direction: column;
     }
