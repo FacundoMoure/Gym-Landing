@@ -509,6 +509,10 @@ span{
         grid-template-columns: 1fr;
     }
 
+    .services h2{
+        font-size: 2rem;
+    }
+
     /* 📖 ABOUT (orden correcto + botón abajo) */
     .about{
         flex-direction: column;
