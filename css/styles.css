@@ -543,3 +543,10 @@ html, body {
 }
 
 
+/* DESACTIVAR AOS EN MOBILE */
+@media (max-width: 768px){
+    [data-aos]{
+        opacity: 1 !important;
+        transform: none !important;
+    }
+}
